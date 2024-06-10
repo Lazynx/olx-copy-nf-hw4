@@ -19,8 +19,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
     return (
         <div className="flex flex-col md:flex-row p-4 border rounded-lg shadow-md bg-white">
-            <div className="w-full md:w-48 h-48 md:h-auto relative mb-4 md:mb-0">
-                <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+            <div className="flex-none w-48 md:w-48 h-48 md:h-auto relative">
+                <img src={image} alt={title} className="absolute inset-0 w-full h-full md:object-cover rounded-lg" />
             </div>
             <div className="flex-auto p-4">
                 <div className="flex items-baseline justify-between">

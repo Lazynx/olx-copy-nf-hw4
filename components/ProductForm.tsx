@@ -62,12 +62,10 @@ const ProductForm: React.FC = () => {
 
         try {
             createProductMutation.mutate(newProduct);
-            // Save product to localStorage
             const existingProducts = JSON.parse(localStorage.getItem('products') || '[]');
             existingProducts.push(newProduct);
             localStorage.setItem('products', JSON.stringify(existingProducts));
 
-            // Redirect to products page
             router.push('/products');
         } catch (error) {
             console.error('Error creating product:', error);
