@@ -33,7 +33,7 @@ export default function Home() {
                         id={product.id}
                         image={product.image ?? '/images/bg.jpg'}
                         title={product.title ?? 'No title'}
-                        price={product.price ?? '0'}
+                        price={product.price ?? 0}
                         description={product.description ?? 'No description'}
                         category={product.category ?? 'No category'}
                     />
