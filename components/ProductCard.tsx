@@ -4,7 +4,7 @@ type ProductCardProps = {
     id: number;
     image: string;
     title: string;
-    price: string;
+    price: number;
     description: string;
     category: string;
 };
